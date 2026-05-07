@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Derrick Ventura — Web Developer</title>
-  <meta name="description" content="CS Student & Freelance Web Developer based in Salisbury, NC. Building custom websites for local businesses starting at $300." />
-  <meta name="keywords" content="web developer, freelance, Salisbury NC, local business websites, custom websites" />
+  <title>Derrick Ventura — CS Student</title>
+  <meta name="description" content="Derrick Ventura — Computer Science student at UNC Charlotte. Building projects in web development, software, and more." />
+  <meta name="keywords" content="computer science, CS student, UNC Charlotte, web development, software, Derrick Ventura" />
   <meta name="author" content="Derrick Ventura" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -16,7 +16,10 @@
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
+  <!-- ═══════════════════════════════════════
+       NAV — Fixed top bar with logo and links
+       Scrolled class added by script.js on scroll
+  ════════════════════════════════════════════ -->
   <nav id="navbar">
     <a href="#hero" class="nav-logo">DV<span>.</span></a>
     <ul class="nav-links">
@@ -26,14 +29,18 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- ═══════════════════════════════════════
+       HERO — Full height landing section
+       Glows are decorative background blobs
+       Grid lines come from CSS ::after pseudo
+  ════════════════════════════════════════════ -->
   <section id="hero">
     <div class="hero-glow"></div>
     <div class="hero-glow2"></div>
     <div class="hero-inner">
       <h1 class="hero-name">Derrick<br><span class="accent">Ventura</span></h1>
-      <p class="hero-title">CS Student &amp; Web Developer</p>
-      <p class="hero-desc">I build custom websites for local businesses — fast, clean, and mobile-friendly. Based in Salisbury, NC.</p>
+      <p class="hero-title">CS Student @ UNC Charlotte</p>
+      <p class="hero-desc">Computer Science student passionate about building — from websites to software projects. Based in Salisbury, NC.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">See My Work →</a>
         <a href="#contact" class="btn-secondary">Get In Touch</a>
@@ -42,57 +49,68 @@
     <div class="hero-scroll">scroll</div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ═══════════════════════════════════════
+       ABOUT — Two column grid: text left, stats right
+       reveal class animated by IntersectionObserver
+  ════════════════════════════════════════════ -->
   <section id="about">
     <div class="section-label">About Me</div>
-    <h2 class="section-title">Building real things<br>for real businesses.</h2>
+    <h2 class="section-title">Building real things<br>and learning fast.</h2>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a <strong>CS student at UNC Charlotte</strong> and a freelance web developer focused on helping local businesses get online with a site they're actually proud of.</p>
-        <p>Every site I build is <strong>coded from scratch</strong> — no templates, no page builders. That means it loads fast, looks sharp, and actually works on your customers' phones.</p>
-        <p>Hosting is <strong>free forever</strong> with every project. The only separate cost is your domain name, which runs about $12–$15 a year.</p>
+        <p>I'm a <strong>CS student at UNC Charlotte</strong> with a background in IT and cybersecurity from dual enrollment at Rowan-Cabarrus Community College.</p>
+        <p>I build real projects outside of class — starting with <strong>live business websites</strong>.</p>
+        <p>I'm interested in <strong>software engineering and cybersecurity</strong> and committed to keep growing through real work and real projects.</p>
         <div class="skills-list">
           <span class="skill-tag">HTML5</span>
           <span class="skill-tag">CSS3</span>
           <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">Netlify</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
           <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">SEO</span>
-          <span class="skill-tag">Mobile-First</span>
+          <span class="skill-tag">Netlify</span>
+          <span class="skill-tag">Cybersecurity</span>
+          <span class="skill-tag">IT Fundamentals</span>
         </div>
       </div>
       <div class="about-stats reveal">
         <div class="stat-card">
-          <div class="stat-num">$300<span>+</span></div>
-          <div class="stat-label">starting price</div>
+          <div class="stat-num">UNC<span>C</span></div>
+          <div class="stat-label">CS class of 2029</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">$0</div>
-          <div class="stat-label">monthly hosting</div>
+          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-label">live projects</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">1–2<span>wk</span></div>
-          <div class="stat-label">avg turnaround</div>
+          <div class="stat-num">IT<span>&</span></div>
+          <div class="stat-label">cybersecurity certs</div>
         </div>
         <div class="stat-card">
           <div class="stat-num">100<span>%</span></div>
-          <div class="stat-label">custom built</div>
+          <div class="stat-label">built from scratch</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ═══════════════════════════════════════
+       PROJECTS — Auto-fill grid of project cards
+       To add a new project: copy a proj-card block
+       and fill in the details. Remove coming-soon
+       class to make a card fully interactive.
+  ════════════════════════════════════════════ -->
   <section id="projects">
     <div class="projects-header reveal">
       <div>
         <div class="section-label">Projects</div>
-        <h2 class="section-title">Live work.</h2>
+        <h2 class="section-title">What I've built.</h2>
       </div>
     </div>
     <div class="projects-grid">
 
-      <!-- ACE Roofing -->
+      <!-- PROJECT CARD — ACE Roofing
+           Live project — keep href up to date -->
       <a href="https://aceroofnc.com" target="_blank" rel="noopener" class="proj-card reveal">
         <div class="proj-thumb live">
           <div class="proj-thumb-placeholder">
@@ -114,56 +132,26 @@
         </div>
       </a>
 
-      <!-- Placeholder 2 -->
-      <div class="proj-card coming-soon reveal">
-        <div class="proj-thumb">
-          <div class="proj-thumb-placeholder">
-            <div class="proj-thumb-icon">✂️</div>
-            <span>coming soon</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-tags">
-            <span class="coming-badge">IN PROGRESS</span>
-          </div>
-          <div class="proj-name">Local Barbershop</div>
-          <p class="proj-desc">Clean, bold site for a local barbershop. Services, gallery, and booking info.</p>
-          <div class="proj-footer">
-            <span class="proj-link">Coming soon</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Placeholder 3 -->
-      <div class="proj-card coming-soon reveal">
-        <div class="proj-thumb">
-          <div class="proj-thumb-placeholder">
-            <div class="proj-thumb-icon">🍕</div>
-            <span>coming soon</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-tags">
-            <span class="coming-badge">IN PROGRESS</span>
-          </div>
-          <div class="proj-name">Restaurant / Food Business</div>
-          <p class="proj-desc">Menu, online ordering integration, and location info for a local restaurant.</p>
-          <div class="proj-footer">
-            <span class="proj-link">Coming soon</span>
-          </div>
-        </div>
-      </div>
+      <!-- MORE PROJECTS NOTE
+           Remove this and add new proj-card blocks
+           as I complete more projects -->
+      <!-- Add new proj-card blocks here as projects are completed -->
 
     </div>
+    <p class="projects-note reveal">More projects coming — currently finishing my first year at UNCC.</p>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ═══════════════════════════════════════
+       CONTACT — Formspree handles form submission
+       Replace the action URL with Formspree ID
+       if ever need to change accounts
+  ════════════════════════════════════════════ -->
   <section id="contact">
     <div class="section-label">Contact</div>
-    <h2 class="section-title">Let's work together.</h2>
-    <p class="contact-sub reveal">Got a business that needs a website? I'd love to hear about it. Reach out and I'll get back to you fast.</p>
+    <h2 class="section-title">Get in touch.</h2>
+    <p class="contact-sub reveal">Have a project idea, an opportunity, or just want to connect? Send me a message and I'll get back to you.</p>
     <div class="contact-card reveal">
-      <form class="contact-form" action="https://formspree.io/f/xykogkly" method="POST">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xykogkly" method="POST">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -174,13 +162,16 @@
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
         </div>
         <button type="submit" class="btn-primary">Send Message →</button>
       </form>
     </div>
   </section>
-  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════
+       FOOTER — Simple two-column footer
+       Update GitHub link if username changes
+  ════════════════════════════════════════════ -->
   <footer>
     <span class="footer-copy">© 2026 Derrick Ventura</span>
     <div class="footer-links">
